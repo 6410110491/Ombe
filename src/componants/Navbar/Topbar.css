@@ -1,0 +1,18 @@
+.brand {
+    p {
+        margin: 0;
+    }
+    .brand-haeder {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+    .brand-sub {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-top: 0.3rem;
+    }
+}
+
+.navbar-toggler {
+    border: none;
+}
