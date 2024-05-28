@@ -7,7 +7,7 @@ function Home() {
   const isDesktop = useMediaQuery({ query: '(min-width: 768px)' });
   return (
     <div>
-      {isDesktop ? <HomeDesktop /> : <HomeMobile />}
+      <HomeMobile />
     </div>
   )
 }
