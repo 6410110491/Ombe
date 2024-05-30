@@ -20,3 +20,18 @@ code {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
 }
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #d3d3d3;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  width: 24px;
+  height: 12px;
+  border-radius: 12px;
+  background-color: #006644;
+}
