@@ -1,10 +1,41 @@
 import React from 'react'
 import "./Delivery.css"
 
+import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
+
 function Delivery() {
     const changepage = (path) => {
         window.location.href = "/" + path
     }
+    const containerStyle = {
+        width: '100%',
+        height: '600px'
+    };
+
+    const center = {
+        lat: 9.104550850965135,
+        lng: 99.33139479659042
+    };
+
+    const { isLoaded } = useJsApiLoader({
+        id: 'google-map-script',
+        googleMapsApiKey: "AIzaSyAOvkP70_7dyb4qZUQsTV9iZNyPl0fa8pA"
+    })
+
+    const [map, setMap] = React.useState(null)
+
+    const onLoad = React.useCallback(function callback(map) {
+        // This is just an example of getting and using the map instance!!! don't just blindly copy!
+        const bounds = new window.google.maps.LatLngBounds(center);
+        map.fitBounds(bounds);
+
+        setMap(map)
+    }, [])
+
+    const onUnmount = React.useCallback(function callback(map) {
+        setMap(null)
+    }, [])
+
     return (
         <div>
             <div className='top' >
@@ -21,7 +52,20 @@ function Delivery() {
             </div>
 
             <div className='map'>
-
+                {isLoaded ? (
+                    <GoogleMap
+                        mapContainerStyle={containerStyle}
+                        center={center}
+                        zoom={2}
+                        onLoad={onLoad}
+                        onUnmount={onUnmount}
+                    >
+                        <Marker
+                            position={center}
+                        />
+                    </GoogleMap>
+                ) : <></>
+                }
             </div>
 
             <div className='contect'>
@@ -86,26 +130,26 @@ function Delivery() {
                         borderLeft: "2px dashed rgba(0, 0, 0, 0.3)",
                         position: "absolute",
                         zIndex: "1"
-                     }}></div>
+                    }}></div>
 
 
 
-                <div className='main-container'>
-                    <div onClick={() => changepage("")} className='icon'>
-                        <i className="fa-solid fa-store"
-                            style={{
-                                fontSize: '1rem', width: "54px", height: "54px", border: "1px solid #D7ECE5",
-                                borderRadius: "50%", display: "flex", justifyContent: "center", alignItems: "center"
-                            }}>
-                        </i>
-                    </div>
-                    <div>
-                        <div className='main-text'>Sweet Corner St.</div>
-                        <div className='main-subtext'>Avenue 2263</div>
+                    <div className='main-container'>
+                        <div onClick={() => changepage("")} className='icon'>
+                            <i className="fa-solid fa-store"
+                                style={{
+                                    fontSize: '1rem', width: "54px", height: "54px", border: "1px solid #D7ECE5",
+                                    borderRadius: "50%", display: "flex", justifyContent: "center", alignItems: "center"
+                                }}>
+                            </i>
+                        </div>
+                        <div>
+                            <div className='main-text'>Sweet Corner St.</div>
+                            <div className='main-subtext'>Avenue 2263</div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
         </div >
     )
 }
