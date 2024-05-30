@@ -23,11 +23,11 @@ function Signin() {
     }
     return (
         <div style={{
-            maxWidth: '1024px', marginRight: 'auto', marginLeft: 'auto',paddingTop: '35px',
+            maxWidth: '1024px', marginRight: 'auto', marginLeft: 'auto', paddingTop: '35px',
             paddingRight: '20px', paddingLeft: '20px', boxSizing: 'border-box'
         }}>
             <div >
-                <div style={{ display: 'flex',  justifyContent: "center", marginBottom: '50px' }}>
+                <div style={{ display: 'flex', justifyContent: "center", marginBottom: '50px' }}>
                     <div>
                         <svg width="35" height="40" viewBox="0 0 80 92" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M71.9842 92.0001H4.06284C2.07803 92.0001 0.469116 90.3912 0.469116 88.4064C0.469116 86.4216 2.07803 84.8127 4.06284 84.8127H71.9842C73.969 84.8127 75.5779 86.4216 75.5779 88.4064C75.5779 90.3912 73.969 92.0001 71.9842 92.0001Z" fill="#F7DBB3">
@@ -35,36 +35,38 @@ function Signin() {
                             </path></svg>
                     </div>
 
-                    <h2 style={{ fontSize: '28px', paddingTop: '8px', paddingLeft: '10px', lineheight: ' 30px', 
-                    fontWeight: '600',lineHeight: '30px' ,marginBottom: '10px'}}>Ombe</h2>
+                    <h2 style={{
+                        fontSize: '28px', paddingTop: '8px', paddingLeft: '10px', lineheight: ' 30px',
+                        fontWeight: '600', lineHeight: '30px', marginBottom: '10px'
+                    }}>Ombe</h2>
                 </div>
 
 
                 <form onSubmit={handleLogin} >
-                    <h2 style={{ textAlign: 'left', fontSize: '1.5rem', marginBottom: '10px', fontWeight: '600',color:'#1b1b1b'}}>Sign In</h2>
-                    <p className="subtext" style={{ fontSize: '14px', lineHeight: '24px', color: '#000000',fontWeight: '400' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                    <h2 style={{ textAlign: 'left', fontSize: '1.5rem', marginBottom: '10px', fontWeight: '600', color: '#1b1b1b' }}>Sign In</h2>
+                    <p className="subtext" style={{ fontSize: '14px', lineHeight: '24px', color: '#000000', fontWeight: '400' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
 
-                    <div class="item-title item-label" style={{margin: "10px 0px" , fontSize: '14px', color: '##8a8a8a'}}>Username</div>
+                    <div class="item-title item-label" style={{ margin: "10px 0px", fontSize: '14px', color: '##8a8a8a' }}>Username</div>
                     <div style={{ display: 'flex', flexDirection: "column", justifyContent: 'center', alignItems: 'center', fontSize: '14px' }}>
                         <div className="form-group" style={{ width: "100%" }}>
                             <TextField id="standard-basic" variant="standard" type="text" fullWidth
-                                style={{ height: '60px', paddingTop: '0.5rem' }} 
-                                placeholder='Username'/>
+                                style={{ height: '60px', paddingTop: '0.5rem' }}
+                                placeholder='Username' />
                         </div>
                     </div>
-                    <div class="item-title item-label" style={{margin: "20px 0px" , fontSize: '14px' , color: '#8a8a8a'}}>Password</div>
+                    <div class="item-title item-label" style={{ margin: "20px 0px", fontSize: '14px', color: '#8a8a8a' }}>Password</div>
                     <div style={{ display: 'flex', flexDirection: "column", justifyContent: 'center', alignItems: 'center', fontSize: '14px' }}>
                         <div className="form-group" style={{ width: "100%" }}>
                             <TextField id="standard-basic" variant="standard" type="password" fullWidth
-                                style={{ height: '60px', paddingTop: '0.5rem' }} 
-                                placeholder='Password'/>
+                                style={{ height: '60px', paddingTop: '0.5rem' }}
+                                placeholder='Password' />
                         </div>
 
                         <Button style={{
                             marginTop: '20px', backgroundColor: "#03764D", border: 'none',
                             borderRadius: '50px', padding: '18px 25px', height: 'auto', color: '#FFFFFF', fontWeight: "600",
-                            height: '56.8px', width: "100%" , fontSize: '16px'
-                        }}>LOGIN
+                            height: '56.8px', width: "100%", fontSize: '16px'
+                        }} onClick={() => changepage("")} >LOGIN
                         </Button>
 
                     </div>
@@ -72,23 +74,27 @@ function Signin() {
                         Forgot password?{" "}
                         <Link onClick={() => changepage("signup")} style={{
                             fontWeight: "600", textdecoration: 'underline',
-                            color: "#03764D", fontSize: '14px' ,marginLeft: '5px'
+                            color: "#03764D", fontSize: '14px', marginLeft: '5px'
                         }}>
                             Reset here
                         </Link>
                     </p>
 
                 </form>
-                <div className="mt-4" style={{ display: "flex", flexDirection: "column", 
-                justifyContent: 'center', alignItems: 'center' }}>
-                    <p className="mb-0  text-center" style={{ fontSize: '14px', marginBottom: '14px', 
-                    textAlign: 'center', fontWeight: '500px', opacity: '0.4' ,marginTop:'40px'}}>
+                <div className="mt-4" style={{
+                    display: "flex", flexDirection: "column",
+                    justifyContent: 'center', alignItems: 'center'
+                }}>
+                    <p className="mb-0  text-center" style={{
+                        fontSize: '14px', marginBottom: '14px',
+                        textAlign: 'center', fontWeight: '500px', opacity: '0.4', marginTop: '40px'
+                    }}>
                         Don't have an account?{" "}
                     </p>
                     <Button style={{
-                        marginTop: '1rem', backgroundColor: "#F7DBB4", border: 'none', borderRadius: '50px', 
+                        marginTop: '1rem', backgroundColor: "#F7DBB4", border: 'none', borderRadius: '50px',
                         padding: '18px 25px', height: '56.8px', color: '#313131', fontWeight: 'bold', width: "100%", fontWeight: "600",
-                    }}>
+                    }} onClick={() => changepage("create")}>
                         CREATE AN ACCOUNT
                     </Button>
                 </div>

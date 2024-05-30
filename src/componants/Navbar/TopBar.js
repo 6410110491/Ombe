@@ -38,7 +38,7 @@ function TopBar() {
                                 color: "#177C55",
                                 position: "absolute",
                                 right: "0",
-                                bottom:"-15px"
+                                bottom: "-15px"
                             }}
                         ></i>
                         <i className="fa fa-circle active" style={{
@@ -59,28 +59,30 @@ function TopBar() {
                         aria-labelledby={`offcanvasNavbarLabel-expand-false`}
                         placement="end"
                     >
-                        <Offcanvas.Header closeButton>
+                        <Offcanvas.Header closeButton style={{
+                            marginTop: "1.25rem", padding: "15px 25px",
+                            fontSize: "28px",
+                        }} >
                             <Offcanvas.Title id={`offcanvasNavbarLabel-expand-false`}>
-                                Offcanvas
+                                Ombe | Coffee Shop
                             </Offcanvas.Title>
                         </Offcanvas.Header>
                         <Offcanvas.Body>
                             <Nav className="justify-content-end flex-grow-1 pe-3">
-                                <Nav.Link href="#action1">Home</Nav.Link>
-                                <Nav.Link href="#action2">Link</Nav.Link>
-                                <NavDropdown
-                                    title="Dropdown"
-                                    id={`offcanvasNavbarDropdown-expand-false`}
-                                >
-                                    <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                                    <NavDropdown.Item href="#action4">
-                                        Another action
-                                    </NavDropdown.Item>
-                                    <NavDropdown.Divider />
-                                    <NavDropdown.Item href="#action5">
-                                        Something else here
-                                    </NavDropdown.Item>
-                                </NavDropdown>
+                                <Nav.Link href="/started" style={{
+                                    fontSize: "1.125rem", fontWeight: "400",
+                                    padding: "15px 25px"
+                                }}>
+                                    <i class="fa-solid fa-house"
+                                        style={{ marginRight: "20px" }}></i>
+                                    Start</Nav.Link>
+
+                                <Nav.Link href="/login" style={{
+                                    fontSize: "1.125rem", fontWeight: "400",
+                                    padding: "15px 25px"
+                                }}>
+                                    <i className="fa-solid fa-right-to-bracket"
+                                        style={{ marginRight: "20px" }}></i>  Login</Nav.Link>
                             </Nav>
                         </Offcanvas.Body>
                     </Navbar.Offcanvas>
