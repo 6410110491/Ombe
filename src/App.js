@@ -2,10 +2,11 @@ import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import Home from './componants/Home/Home';
-import TopBar from './componants/Navbar/TopBar';
 import Signin from './componants/Signin';
 import Login from './componants/Login';
 import Create_Account from './componants/Create_Account';
+import ProductDetail from './componants/Product/ProductDetail';
+import Delivery from './componants/Delivery/Delivery';
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
           <Route exact path="/signin" element={<Signin />} />
           <Route exact path="/login" element={<Login />} />
           <Route exact path="/create" element={<Create_Account />} />
+          <Route path="/productdetail" element={<ProductDetail />} />
+          <Route path="/derivery" element={<Delivery />} />
         </Routes>
       </BrowserRouter>
     </div>
