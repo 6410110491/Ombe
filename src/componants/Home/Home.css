@@ -26,7 +26,7 @@
     background-color: #fff;
     border-radius: 18px;
     box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);
-    margin: 5px 20px 0px 0px;
+    margin: 5px 0px 0px 20px;
     border: 1px solid #efefef;
 }
 
@@ -44,3 +44,11 @@ swiper-slide {
     transform: translateY(-20px);
     transition: 0.5s;
 }
+
+.form-control::-webkit-input-placeholder {
+    color: rgb(156, 156, 156);
+  }
+
+  .card-price {
+    display: flex;
+  }

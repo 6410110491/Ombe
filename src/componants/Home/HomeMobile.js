@@ -82,7 +82,7 @@ function HomeMobile() {
 
     return (
         <div style={{
-            padding: "1rem",
+            padding: "20px",
             maxWidth: "1024px",
             margin: "0 auto",
             marginBottom: "3rem",
@@ -93,32 +93,36 @@ function HomeMobile() {
                 <Form.Control
                     type="text"
                     placeholder="Search beverages or foods"
-                    style={{ borderRadius: "50px", height: "60px", border: "1px solid #e9e9e9", color: "#585858", fontWeight: "400" }}
+                    style={{
+                        borderRadius: "50px", height: "60px", border: "1px solid #e9e9e9", fontSize: '16px',
+                        backgroundColor: '#f9f9f9', padding: '12px 50px 12px 25px', color: "#585858", fontWeight: '400'
+                    }}
                 />
                 <span
                     className="search-icon"
                     style={{
                         position: "absolute",
-                        right: "20px",
+                        right: "30px",
                         top: "45%",
                         transform: "translateY(-50%)",
                         cursor: "pointer"
                     }}
                 >
-                    <i className="bi bi-search" style={{ fontSize: "18px", color: "#585858" }}></i>
+                    <i className="bi bi-search" style={{ fontSize: "22px", color: "#585858" }}></i>
                 </span>
             </Form>
 
 
             {/* Product */}
-            <swiper-container slides-per-view="auto" space-between="20" mousewheel-invert="true">
+            <swiper-container slides-per-view="auto"  mousewheel-invert="true">
                 {products.map((product, index) => {
                     return (
-                        <swiper-slide className="Product" key={index} 
+                        <swiper-slide className="Product" key={index}
                             onClick={() => changepage("productdetail")}>
                             <div style={{
-                                backgroundColor: "#04764e", height: "250px", width: "205px",
+                                backgroundColor: "#04764e", height: "231px", width: "205px",
                                 borderRadius: "30px", marginTop: "50px", position: "relative", cursor: "pointer",
+                                marginLeft:"20px"
                                 // boxShadow:" 0px 12px 20px rgb(4, 118, 78, 0.3)"
                             }}>
                                 <div style={{ position: "absolute", top: "-50px", left: "20px" }}>
@@ -131,12 +135,16 @@ function HomeMobile() {
                                     <p className='card-text card-name'>
                                         {product.title}
                                     </p>
+
+
+
                                     <p className='card-text card-price'
-                                        style={{ fontSize: "1.25rem", marginTop: "0.5rem" }}>
-                                        $ {product.price}
+                                        style={{ fontSize: "24px", marginTop: "0.5rem", fontWeight: '500' }}>
+                                        <div style={{ fontSize: "13px", fontWeight: '500', height: 'auto' ,paddingTop: '2px',marginRight: '5px'}}>$</div>
+                                        {product.price}
                                         <span style={{
-                                            fontSize: "1rem",
-                                            textDecoration: "line-through", color: "#53A688", marginLeft: "0.5rem"
+                                            fontSize: "16px",
+                                            textDecoration: "line-through", color: "#53A688", marginLeft: "0.5rem", fontWeight: '300'
                                         }}>
                                             $ {product.priceDiscount}
                                         </span>
@@ -153,7 +161,7 @@ function HomeMobile() {
             <div className='catagory'>
                 <p className='catagory-text'>Categories</p>
 
-                <swiper-container slides-per-view="auto" space-between="20" mousewheel-invert="true">
+                <swiper-container slides-per-view="auto" mousewheel-invert="true">
                     {categories.map((category, index) => {
                         return (
                             <swiper-slide key={index} style={{ transform: "translateY(0)" }}>
@@ -167,7 +175,7 @@ function HomeMobile() {
                                         <p style={{ fontWeight: "600", marginBottom: "5px" }}>
                                             {category.title}
                                         </p>
-                                        <p style={{ fontWeight: "500", color: "#04764e", marginBottom: "0" }}>
+                                        <p style={{ fontWeight: "500", color: "#04764e", marginBottom: "0", fontSize: '14px'}}>
                                             {category.menus} Menus
                                         </p>
                                     </div>
@@ -182,10 +190,11 @@ function HomeMobile() {
             {/* Featured Beverages */}
             <div>
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "20px" }}>
-                    <p style={{ fontSize: "1.125rem", fontWeight: "600", lineHeight: "1.4" }}>Featured Beverages</p>
+                    <p style={{ fontSize: "1.125rem", fontWeight: "600", lineHeight: "1.4" ,marginBottom: '0'}}>
+                        Featured Beverages</p>
                     <p style={{
                         fontSize: "1rem", fontWeight: "600", lineHeight: "1.4", color: "#04764e",
-                        padding: "0px 16px"
+                        padding: "0px 16px",marginBottom: '0'
                     }}>More</p>
                 </div>
 
@@ -211,12 +220,12 @@ function HomeMobile() {
                     </div>
 
                     <div style={{ width: "100%" }}>
-                        <p style={{ fontWeight: "600", fontSize: "1.125rem" }}>Hot Creamy Cappuccino Latte Ombe</p>
-                        <div style={{ display: "flex", justifyContent: "space-between" }}>
-                            <p style={{ fontWeight: "600", fontSize: "1.25rem" }}>
+                        <p style={{ fontWeight: "600", fontSize: "16px" }}>Hot Creamy Cappuccino Latte Ombe</p>
+                        <div style={{ display: "flex", justifyContent: "space-between"}}>
+                            <p style={{ fontWeight: "600",fontSize: "18px"}}>
                                 $12.6
                             </p>
-                            <p style={{ fontWeight: "600", fontSize: "1.25rem", color: "#04764e" }}>
+                            <p style={{ fontWeight: "500", fontSize: "18px", color: "#04764e" }}>
                                 50 Pts
                             </p>
                         </div>
