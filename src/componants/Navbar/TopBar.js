@@ -12,14 +12,14 @@ function TopBar() {
     return (
         <Navbar key="false" expand="false"
             style={{
-                marginTop: "1rem",
-                padding: "0.25rem 0.5rem",
+                marginTop: "20px" , marginBottom: "30px" ,
+                padding: "0"
             }}>
-            <Container fluid>
+            <Container fluid style={{padding: '0' }}>
                 <Navbar.Brand href="/">
                     <div className='brand'>
-                        <p className='brand-haeder'>Good Morning</p>
-                        <p className='brand-sub'>Williams</p>
+                        <p className='brand-haeder' style={{fontSize: "14px" , fontWeight: '400', color: '#1b1b1b'}}>Good Morning</p>
+                        <p className='brand-sub' style={{fontSize: "24px", fontWeight: '600', color: '#1b1b1b', margin: '0'}}>Williams</p>
                     </div>
                 </Navbar.Brand>
 
@@ -32,9 +32,9 @@ function TopBar() {
                     <div style={{ position: "relative" }}>
                         <i className="bi bi-handbag"
                             style={{
-                                fontSize: "1.5rem",
+                                fontSize: "25px",
                                 padding: "4px 12px",
-                                fontWeight: "500",
+                                fontWeight: 'bold',
                                 color: "#177C55",
                                 position: "absolute",
                                 right: "0",
@@ -43,15 +43,17 @@ function TopBar() {
                         ></i>
                         <i className="fa fa-circle active" style={{
                             color: "#04764e",
-                            fontSize: "13px",
+                            fontSize: "12px",
                             border: "2px solid #fff",
                             position: "absolute",
-                            right: "5px",
-                            top: "-20px",
+                            right: "-3px",
+                            top: "-25px",
                             borderRadius: "50%",
+                            padding: "4px 12px",
                         }}></i>
                     </div>
-                    <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-false`}>
+                    <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-false`} style={{fontSize: '25px' ,
+                            padding: "4px 0 4px 12px"}}>
                         <i className="fa-solid fa-bars-staggered"></i>
                     </Navbar.Toggle>
                     <Navbar.Offcanvas

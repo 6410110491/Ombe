@@ -33,7 +33,7 @@ function ProductDetail() {
                     <div onClick={() => changepage("")} style={{ cursor: "pointer" }}>
                         <i className="fa-solid fa-arrow-left-long"
                             style={{
-                                fontSize: '1rem', backgroundColor: "#4E9E83", width: "40px", height: "40px",
+                                fontSize: '24px', backgroundColor: "#4E9E83", width: "46px", height: "46px",
                                 borderRadius: "50%", display: "flex", justifyContent: "center", alignItems: "center"
                             }}>
                         </i>
@@ -50,22 +50,29 @@ function ProductDetail() {
                     <div className='touchbar'></div>
                 </div>
 
-                <div className='title'>Ice Chocolate Coffee</div>
+                <div className='title' style={{fontSize: '24px'}}>Ice Chocolate Coffee</div>
                 <div className='sub-title'>
                     “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 </div>
 
-                <div className='range'>
+                <div className='range'  style={{margin: '35px 0px'}}>
                     <Form style={{ display: "flex", justifyContent: "center" }}>
                         <input type="range" class="form-range" min="0" max="3" step="1" id="customRange3"
-                            style={{ width: "90%" }} value={rangeValue}
+                            style={{ width: "80%" }} value={rangeValue}
                             onChange={handleRangeChange} />
                     </Form>
-                    <div style={{ display: "flex", justifyContent: "space-between", marginTop: "0.75rem" }}>
-                        <p style={{ fontWeight: (rangeValue === 0) ? "700" : "" }}>Small</p>
-                        <p style={{ fontWeight: (rangeValue === 1) ? "700" : "" }}>Medium</p>
-                        <p style={{ fontWeight: (rangeValue === 2) ? "700" : "" }}>Large</p>
-                        <p style={{ fontWeight: (rangeValue === 3) ? "700" : "" }}>Xtra Large</p>
+                    <div style={{ display: "flex", justifyContent: "space-between", marginTop: "0.75rem",
+                        paddingLeft: '25px'
+                     }}>
+                        <p style={{ fontWeight: (rangeValue === 0) ? "700" : "" , 
+                            marginBottom: '0'
+                        }}>Small</p>
+                        <p style={{ fontWeight: (rangeValue === 1) ? "700" : "" , 
+                            marginBottom: '0'}}>Medium</p>
+                        <p style={{ fontWeight: (rangeValue === 2) ? "700" : "" , 
+                            marginBottom: '0'}}>Large</p>
+                        <p style={{ fontWeight: (rangeValue === 3) ? "700" : "" , 
+                            marginBottom: '0'}}>Xtra Large</p>
                     </div>
                 </div>
 
@@ -83,14 +90,13 @@ function ProductDetail() {
 
                     <div className='count-item'>
                         <div onClick={handleMinuscount} className='changecount'><i class="fa-solid fa-minus"></i></div>
-                        <div style={{ fontWeight: "600" }}>{count}</div>
+                        <div style={{ fontWeight: "600" , fontSize: '18px' }}>{count}</div>
                         <div onClick={handlePluscount} className='changecount'><i class="fa-solid fa-plus"></i></div>
                     </div>
 
                 </div>
                 <div className='description'>
-                    Indulge in the perfect blend of rich chocolate and robust coffee with our Ice Chocolate Coffee.
-                    This refreshing beverage combines smooth, premium chocolate with bold, freshly brewed coffee, delivering a creamy and invigorating experience.
+                Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                 </div>
 
                 <div className='button'

@@ -42,12 +42,12 @@ function Delivery() {
                 <div onClick={() => changepage("productdetail")} style={{ cursor: "pointer" }}>
                     <i className="fa-solid fa-arrow-left-long"
                         style={{
-                            fontSize: '1.5rem', backgroundColor: "#F6F6F6", width: "40px", height: "40px",
-                            borderRadius: "50%", display: "flex", justifyContent: "center", alignItems: "center"
+                            fontSize: '24px', backgroundColor: "#F6F6F6", width: "46px", height: "46px",
+                                borderRadius: "50%", display: "flex", justifyContent: "center", alignItems: "center"
                         }}>
                     </i>
                 </div>
-                <div className='toptext'>Tracking Orders</div>
+                <div className='toptext' style={{fontWeight:'600'}}>Tracking Orders</div>
                 <div style={{ width: "40px", height: "40px" }}></div>
             </div>
 
