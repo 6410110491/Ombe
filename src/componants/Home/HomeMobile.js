@@ -177,11 +177,11 @@ function HomeMobile() {
                                     }} />
                             </div>
                             <div style={{ position: "absolute", bottom: "10px", padding: "5px 16px" }}>
-                                <p className='card-text card-name'
+                                <div className='card-text card-name'
                                     style={{ fontSize: "16px", marginTop: "0.5rem", fontWeight: '500' }}>
                                     {product.title}
-                                </p>
-                                <p className='card-text card-price'
+                                </div>
+                                <div className='card-text card-price'
                                     style={{ fontSize: "24px", marginTop: "0.5rem", fontWeight: '500' }}>
                                     <div style={{ fontSize: "13px", fontWeight: '500', height: 'auto', paddingTop: '2px', marginRight: '5px' }}>$</div>
                                     {product.price}
@@ -196,7 +196,7 @@ function HomeMobile() {
                                     }}>
                                         $ {product.priceDiscount}
                                     </span>
-                                </p>
+                                </div>
                             </div>
                         </div>
                     </SwiperSlide>

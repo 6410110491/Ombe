@@ -4,7 +4,6 @@ import "./Topbar.css"
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
 
@@ -81,7 +80,7 @@ function TopBar() {
                                     fontSize: "1.125rem", fontWeight: "400",
                                     padding: "15px 25px"
                                 }}>
-                                    <i class="fa-solid fa-house"
+                                    <i className="fa-solid fa-house"
                                         style={{ marginRight: "20px", color: "#04764e" }}></i>
                                     เริ่มต้น</Nav.Link>
 

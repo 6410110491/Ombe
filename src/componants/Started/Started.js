@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import './Started.css';
 import { Button } from "react-bootstrap";
 
@@ -46,7 +46,7 @@ function Started() {
                     <SwiperSlide>
                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
                             <img src='https://ombe.dexignzone.com/xhtml/img/svg/illustration.svg'
-                                style={{ width: '235px', height: '242px', margin: '70px' }} />
+                                style={{ width: '235px', height: '242px', margin: '70px' }} alt='first' />
                             <div style={{ padding: '0px 15px', marginTop: '50px' }}>
                                 <h2 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize: '24px', lineHeight: '30px', fontWeight: '600', textAlign: 'center', marginBottom: '25px' }}>
                                     มาพบกับเครื่องดื่มกาแฟหน้าร้อนของเรากัน
@@ -61,7 +61,7 @@ function Started() {
                     <SwiperSlide>
                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
                             <img src='https://ombe.dexignzone.com/xhtml/img/svg/coffee-mug.svg'
-                                style={{ width: '235px', height: '242px', margin: '70px' }} />
+                                style={{ width: '235px', height: '242px', margin: '70px' }} alt='second' />
                             <div style={{ padding: '0px 15px', marginTop: '50px' }}>
                                 <h2 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize: '24px', lineHeight: '30px', fontWeight: '600', textAlign: 'center', marginBottom: '25px' }}>
                                     เริ่มต้นเช้าวันใหม่ด้วยกาแฟชั้นดี
@@ -76,7 +76,7 @@ function Started() {
                     <SwiperSlide>
                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
                             <img src='https://ombe.dexignzone.com/xhtml/img/svg/coffee-cup.svg'
-                                style={{ width: '235px', height: '242px', margin: '70px' }} />
+                                style={{ width: '235px', height: '242px', margin: '70px' }} alt='third' />
                             <div style={{ padding: '0px 15px', marginTop: '50px' }}>
                                 <h2 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize: '24px', lineHeight: '30px', fontWeight: '600', textAlign: 'center', marginBottom: '25px' }}>
                                     ร้านกาแฟที่ดีที่สุดในเมืองนี้

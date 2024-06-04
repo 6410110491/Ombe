@@ -2,8 +2,6 @@ import React, { useState } from 'react'
 import "./Product.css"
 import { Form } from 'react-bootstrap'
 
-import { useMediaQuery } from 'react-responsive'
-
 function ProductDetail() {
     const [rangeValue, setRangeValue] = useState(0);
     const [count, setCount] = useState(0);
@@ -58,7 +56,7 @@ function ProductDetail() {
 
                     <div className='range' style={{ margin: '35px 0px' }}>
                         <Form style={{ display: "flex", justifyContent: "center" }}>
-                            <input type="range" class="form-range" min="0" max="3" step="1" id="customRange3"
+                            <input type="range" className="form-range" min="0" max="3" step="1" id="customRange3"
                                 style={{ width: "80%" }} value={rangeValue}
                                 onChange={handleRangeChange} />
                         </Form>
@@ -99,9 +97,9 @@ function ProductDetail() {
                         </div>
 
                         <div className='count-item'>
-                            <div onClick={handleMinuscount} className='changecount'><i class="fa-solid fa-minus"></i></div>
+                            <div onClick={handleMinuscount} className='changecount'><i className="fa-solid fa-minus"></i></div>
                             <div style={{ fontWeight: "600", fontSize: '18px' }}>{count}</div>
-                            <div onClick={handlePluscount} className='changecount'><i class="fa-solid fa-plus"></i></div>
+                            <div onClick={handlePluscount} className='changecount'><i className="fa-solid fa-plus"></i></div>
                         </div>
 
                     </div>

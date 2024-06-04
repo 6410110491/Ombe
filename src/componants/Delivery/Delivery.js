@@ -37,7 +37,7 @@ function Delivery() {
     }, [])
 
     return (
-        <div style={{display:"flex", justifyContent:"center"}}>
+        <div style={{ display: "flex", justifyContent: "center" }}>
             <div className='top' >
                 <div onClick={() => changepage("productdetail")} style={{ cursor: "pointer" }}>
                     <i className="fa-solid fa-arrow-left-long"
@@ -72,7 +72,7 @@ function Delivery() {
                 <div style={{ display: "flex", color: "#FFF", alignItems: "center", justifyContent: "center" }}>
                     <div style={{ marginRight: "1rem" }}>
                         <img src='https://news.uchicago.edu/sites/default/files/styles/square_feature/public/images/2023-10/Adam-Mastroianni-square.jpg?h=daa376fd&itok=YR0-YXHv'
-                            style={{ width: "3.75rem", height: "3.75rem", borderRadius: "50%" }} />
+                            style={{ width: "3.75rem", height: "3.75rem", borderRadius: "50%" }} alt='profile' />
                     </div>
                     <div>
                         <div style={{ fontSize: "20px", fontWeight: "400" }}>นาย แซนดี้</div>
