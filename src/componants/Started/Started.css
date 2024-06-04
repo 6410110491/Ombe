@@ -18,8 +18,6 @@
     height: 10px;
     background: #d2d2d2;
     opacity: 1;
-    -webkit-transition: all 0.5s;
-    -ms-transition: all 0.5s;
     transition: all 0.5s;
 }
 

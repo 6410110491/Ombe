@@ -22,3 +22,7 @@ code {
   /* font-family: "Poppins", sans-serif; */
   font-weight: 300;
 }
+
+input.MuiInputBase-root.MuiInput-root.MuiInput-underline.MuiInputBase-formControl.MuiInput-formControl {
+  border-bottom: 2px solid #04764e;
+}

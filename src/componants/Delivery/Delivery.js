@@ -37,7 +37,7 @@ function Delivery() {
     }, [])
 
     return (
-        <div>
+        <div style={{display:"flex", justifyContent:"center"}}>
             <div className='top' >
                 <div onClick={() => changepage("productdetail")} style={{ cursor: "pointer" }}>
                     <i className="fa-solid fa-arrow-left-long"

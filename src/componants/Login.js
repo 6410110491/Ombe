@@ -11,7 +11,8 @@ function Login() {
     return (
         <div style={{
             height: "100%", display: "flex", alignItems: "center", justifyContent: "center", paddingTop: '124px',
-            paddingBottom: "40px", paddingLeft: '20px', paddingRight: '20px', flexDirection: "column"
+            paddingBottom: "40px", paddingLeft: '20px', paddingRight: '20px', flexDirection: "column",
+            maxWidth: "1024px", margin: "0 auto"
         }}>
 
 

@@ -9,21 +9,33 @@ import Started from './componants/Started/Started';
 import ProductDetail from './componants/Product/ProductDetail';
 import Delivery from './componants/Delivery/Delivery';
 
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+
 function App() {
+
+  const theme = createTheme({
+    palette: {
+      primary: {
+        main: '#04764e',
+      },
+    },
+  });
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route exact path="/" element={<HomeMobile />} />
-          <Route path="/signin" element={<Signin />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/create" element={<Create_Account />} />
-          <Route path="/productdetail" element={<ProductDetail />} />
-          <Route path="/derivery" element={<Delivery />} />
-          <Route path="/started" element={<Started />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
+    <ThemeProvider theme={theme}>
+      <div className="App">
+        <BrowserRouter>
+          <Routes>
+            <Route exact path="/" element={<HomeMobile />} />
+            <Route path="/signin" element={<Signin />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/create" element={<Create_Account />} />
+            <Route path="/productdetail" element={<ProductDetail />} />
+            <Route path="/derivery" element={<Delivery />} />
+            <Route path="/started" element={<Started />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
+    </ThemeProvider>
   );
 }
 

@@ -29,7 +29,11 @@ function Started() {
         window.location.href = "/" + path
     }
     return (
-        <div>
+        <div style={{
+            maxWidth: "1024px",
+            margin: "0 auto",
+            marginBottom: "3rem",
+        }}>
             <div style={{ padding: "70px 30px 0px 30px " }}>
                 <Swiper
                     ref={swiperRef}
@@ -45,10 +49,10 @@ function Started() {
                                 style={{ width: '235px', height: '242px', margin: '70px' }} />
                             <div style={{ padding: '0px 15px', marginTop: '50px' }}>
                                 <h2 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize: '24px', lineHeight: '30px', fontWeight: '600', textAlign: 'center', marginBottom: '25px' }}>
-                                มาพบกับเครื่องดื่มกาแฟหน้าร้อนของเรากัน
+                                    มาพบกับเครื่องดื่มกาแฟหน้าร้อนของเรากัน
                                 </h2>
                                 <p className="subtext" style={{ fontSize: '14px', textAlign: 'center', paddingBottom: '40px' }}>
-                                พบประสบการณ์ใหม่ในการดื่มกาแฟทุกครั้งที่คุณเข้ามาในร้านของเรา สัมผัสกับรสชาติที่เป็นเอกลักษณ์และบรรยากาศที่อบอุ่น สร้างความทรงจำดีๆ ไปกับเราในทุกๆ แก้ว
+                                    พบประสบการณ์ใหม่ในการดื่มกาแฟทุกครั้งที่คุณเข้ามาในร้านของเรา สัมผัสกับรสชาติที่เป็นเอกลักษณ์และบรรยากาศที่อบอุ่น สร้างความทรงจำดีๆ ไปกับเราในทุกๆ แก้ว
                                 </p>
                             </div>
                         </div>
@@ -60,10 +64,10 @@ function Started() {
                                 style={{ width: '235px', height: '242px', margin: '70px' }} />
                             <div style={{ padding: '0px 15px', marginTop: '50px' }}>
                                 <h2 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize: '24px', lineHeight: '30px', fontWeight: '600', textAlign: 'center', marginBottom: '25px' }}>
-                                เริ่มต้นเช้าวันใหม่ด้วยกาแฟชั้นดี
+                                    เริ่มต้นเช้าวันใหม่ด้วยกาแฟชั้นดี
                                 </h2>
                                 <p className="subtext" style={{ fontSize: '14px', textAlign: 'center', paddingBottom: '40px' }}>
-                                พบประสบการณ์ใหม่ในการดื่มกาแฟทุกครั้งที่คุณเข้ามาในร้านของเรา สัมผัสกับรสชาติที่เป็นเอกลักษณ์และบรรยากาศที่อบอุ่น สร้างความทรงจำดีๆ ไปกับเราในทุกๆ แก้ว
+                                    พบประสบการณ์ใหม่ในการดื่มกาแฟทุกครั้งที่คุณเข้ามาในร้านของเรา สัมผัสกับรสชาติที่เป็นเอกลักษณ์และบรรยากาศที่อบอุ่น สร้างความทรงจำดีๆ ไปกับเราในทุกๆ แก้ว
                                 </p>
                             </div>
                         </div>
@@ -75,10 +79,10 @@ function Started() {
                                 style={{ width: '235px', height: '242px', margin: '70px' }} />
                             <div style={{ padding: '0px 15px', marginTop: '50px' }}>
                                 <h2 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize: '24px', lineHeight: '30px', fontWeight: '600', textAlign: 'center', marginBottom: '25px' }}>
-                                ร้านกาแฟที่ดีที่สุดในเมืองนี้
+                                    ร้านกาแฟที่ดีที่สุดในเมืองนี้
                                 </h2>
                                 <p className="subtext" style={{ fontSize: '14px', textAlign: 'center', paddingBottom: '40px' }}>
-                                พบประสบการณ์ใหม่ในการดื่มกาแฟทุกครั้งที่คุณเข้ามาในร้านของเรา สัมผัสกับรสชาติที่เป็นเอกลักษณ์และบรรยากาศที่อบอุ่น สร้างความทรงจำดีๆ ไปกับเราในทุกๆ แก้ว
+                                    พบประสบการณ์ใหม่ในการดื่มกาแฟทุกครั้งที่คุณเข้ามาในร้านของเรา สัมผัสกับรสชาติที่เป็นเอกลักษณ์และบรรยากาศที่อบอุ่น สร้างความทรงจำดีๆ ไปกับเราในทุกๆ แก้ว
                                 </p>
                             </div>
                         </div>
