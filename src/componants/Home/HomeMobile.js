@@ -232,7 +232,10 @@ function HomeMobile() {
                                     <p style={{ fontWeight: "600", marginBottom: "5px", fontSize: "16px" }}>
                                         {category.title}
                                     </p>
-                                    <p style={{ fontWeight: "500", color: "#04764e", marginBottom: "0", fontSize: '14px' }}>
+                                    <p style={{
+                                        fontWeight: "500", color: "#04764e", marginBottom: "0", fontSize: '14px',
+                                        fontFamily: "Poppins, sans-serif"
+                                    }}>
                                         {category.menus} Menus
                                     </p>
                                 </div>
@@ -281,7 +284,7 @@ function HomeMobile() {
                             <p style={{ fontWeight: "600", fontSize: "18px" }}>
                                 $12.6
                             </p>
-                            <p style={{ fontWeight: "500", fontSize: "18px", color: "#04764e" }}>
+                            <p style={{ fontWeight: "500", fontSize: "18px", color: "#04764e", fontFamily: "Poppins, sans-serif" }}>
                                 50 Pts
                             </p>
                         </div>
@@ -317,7 +320,7 @@ function HomeMobile() {
                             <p style={{ fontWeight: "600", fontSize: "1.25rem" }}>
                                 $9.6
                             </p>
-                            <p style={{ fontWeight: "600", fontSize: "1.25rem", color: "#04764e" }}>
+                            <p style={{ fontWeight: "500", fontSize: "18px", color: "#04764e", fontFamily: "Poppins, sans-serif" }}>
                                 50 Pts
                             </p>
                         </div>

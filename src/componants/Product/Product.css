@@ -36,6 +36,7 @@
     border-radius: 20px 20px 0 0;
     max-width: 1024px;
     width: 100%;
+    min-height: 80vh;
     height: auto;
     position: absolute;
     top: 280px;

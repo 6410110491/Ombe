@@ -17,7 +17,7 @@ function Signin() {
     return (
         <div style={{
             maxWidth: '1024px', marginRight: 'auto', marginLeft: 'auto', paddingTop: '35px',
-            paddingRight: '20px', paddingLeft: '20px', boxSizing: 'border-box'
+            paddingRight: '20px', paddingLeft: '20px', boxSizing: 'border-box',minHeight:"100vh"
         }}>
             <div >
                 <div style={{ display: 'flex', justifyContent: "center", marginBottom: '50px' }}>

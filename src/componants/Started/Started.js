@@ -33,6 +33,7 @@ function Started() {
             maxWidth: "1024px",
             margin: "0 auto",
             marginBottom: "3rem",
+            minHeight: "100vh",
         }}>
             <div style={{ padding: "70px 30px 0px 30px " }}>
                 <Swiper
