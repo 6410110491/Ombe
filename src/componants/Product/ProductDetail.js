@@ -26,7 +26,7 @@ function ProductDetail() {
     }
     return (
         <div>
-            <div>
+            <div style={{display:"flex", justifyContent:"center"}}>
                 <div className='banner'>
                     <img src='https://ombe.dexignzone.com/xhtml/img/products/single/pic1.png'
                         className='banner-img' alt='banner' />
