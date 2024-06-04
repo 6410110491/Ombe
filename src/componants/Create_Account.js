@@ -57,9 +57,9 @@ function Create_Account() {
 
         <form onSubmit={handleLogin} >
           <h2 style={{ textAlign: 'left', fontSize: '1.5rem', marginBottom: '10px', fontWeight: '600', color: '#1b1b1b' }}>สร้างบัญชี</h2>
-          <p className="subtext" style={{ fontSize: '14px', lineHeight: '24px', color: '#000000', fontWeight: '400' }}>กรุณาสร้างบัญชีของคุณโดยกรอกข้อมูลด้านล่าง</p>
+          <p className="subtext" style={{ fontSize: '14px', lineHeight: '24px', color: '#000000', fontWeight: '500' }}>กรุณาสร้างบัญชีของคุณโดยกรอกข้อมูลด้านล่าง</p>
 
-          <div class="item-title item-label" style={{ margin: "20px 0px", fontSize: '14px', color: '#8a8a8a' }}>ชื่อผู้ใช้</div>
+          <div class="item-title item-label" style={{ margin: "20px 0px", fontSize: '14px', color: '#8a8a8a', fontWeight: '400' }}>ชื่อผู้ใช้</div>
           <div style={{ display: 'flex', flexDirection: "column", justifyContent: 'center', alignItems: 'center', fontSize: '14px' }}>
             <div className="form-group" style={{ width: "100%" }}>
               <TextField id="standard-basic" variant="standard" type="text" fullWidth
@@ -68,7 +68,7 @@ function Create_Account() {
             </div>
           </div>
 
-          <div class="item-title item-label" style={{ margin: "20px 0px", fontSize: '14px', color: '#8a8a8a' }}>อีเมล</div>
+          <div class="item-title item-label" style={{ margin: "20px 0px", fontSize: '14px', color: '#8a8a8a', fontWeight: '400' }}>อีเมล</div>
           <div style={{ display: 'flex', flexDirection: "column", justifyContent: 'center', alignItems: 'center', fontSize: '14px' }}>
             <div className="form-group" style={{ width: "100%" }}>
               <TextField id="standard-basic" variant="standard" type="text" fullWidth
@@ -77,7 +77,7 @@ function Create_Account() {
             </div>
           </div>
 
-          <div class="item-title item-label" style={{ margin: "20px 0px", fontSize: '14px', color: '#8a8a8a' }}>รหัสผ่าน</div>
+          <div class="item-title item-label" style={{ margin: "20px 0px", fontSize: '14px', color: '#8a8a8a', fontWeight: '400' }}>รหัสผ่าน</div>
           <div style={{ display: 'flex', flexDirection: "column", justifyContent: 'center', alignItems: 'center', fontSize: '14px' }}>
             <div className="form-group" style={{ width: "100%" }}>
               <TextField id="standard-basic" variant="standard" type="password" fullWidth
@@ -93,11 +93,12 @@ function Create_Account() {
             </Button>
 
           </div>
-          <div style={{ marginTop: '20px', display: 'flex', alignItems: "center", justifyContent: "center", textAlign: 'center', lineHeight: '24px' }}>
+          <div style={{ marginTop: '20px', display: 'flex', alignItems: "center", justifyContent: "center", 
+          textAlign: 'center', lineHeight: '24px', fontWeight: '400' }}>
             <p class="form-text" >การกดปุ่มสมัครแสดงว่าคุณยอมรับ
               <a href="#" style={{
                 fontWeight: "600", textdecoration: 'underline',
-                color: "#03764D", fontSize: '14px', padding: '3px'
+                color: "#03764D", fontSize: '14px', padding: '3px' 
               }}>ข้อกำหนด</a> และ
               <a href="#" style={{
                 fontWeight: "600", textdecoration: 'underline',
