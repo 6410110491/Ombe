@@ -47,7 +47,7 @@ function Create_Account() {
 
             <h2 style={{
               fontSize: '28px', paddingTop: '8px', paddingLeft: '10px', lineheight: ' 30px',
-              fontWeight: '600', lineHeight: '30px', marginBottom: '10px'
+              fontWeight: '600', lineHeight: '30px', marginBottom: '10px', fontFamily: "Poppins, sans-serif"
             }}>Ombe</h2>
           </div>
 
@@ -56,53 +56,53 @@ function Create_Account() {
         </div>
 
         <form onSubmit={handleLogin} >
-          <h2 style={{ textAlign: 'left', fontSize: '1.5rem', marginBottom: '10px', fontWeight: '600', color: '#1b1b1b' }}>Create an account</h2>
-          <p className="subtext" style={{ fontSize: '14px', lineHeight: '24px', color: '#000000', fontWeight: '400' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+          <h2 style={{ textAlign: 'left', fontSize: '1.5rem', marginBottom: '10px', fontWeight: '600', color: '#1b1b1b' }}>สร้างบัญชี</h2>
+          <p className="subtext" style={{ fontSize: '14px', lineHeight: '24px', color: '#000000', fontWeight: '400' }}>กรุณาสร้างบัญชีของคุณโดยกรอกข้อมูลด้านล่าง</p>
 
-          <div class="item-title item-label" style={{ margin: "20px 0px", fontSize: '14px', color: '#8a8a8a' }}>Username</div>
+          <div class="item-title item-label" style={{ margin: "20px 0px", fontSize: '14px', color: '#8a8a8a' }}>ชื่อผู้ใช้</div>
           <div style={{ display: 'flex', flexDirection: "column", justifyContent: 'center', alignItems: 'center', fontSize: '14px' }}>
             <div className="form-group" style={{ width: "100%" }}>
               <TextField id="standard-basic" variant="standard" type="text" fullWidth
                 style={{ height: '60px', paddingTop: '0.5rem' }}
-                placeholder='Username' />
+                placeholder='ชื่อผู้ใช้' />
             </div>
           </div>
 
-          <div class="item-title item-label" style={{ margin: "20px 0px", fontSize: '14px', color: '#8a8a8a' }}>Email</div>
+          <div class="item-title item-label" style={{ margin: "20px 0px", fontSize: '14px', color: '#8a8a8a' }}>อีเมล</div>
           <div style={{ display: 'flex', flexDirection: "column", justifyContent: 'center', alignItems: 'center', fontSize: '14px' }}>
             <div className="form-group" style={{ width: "100%" }}>
               <TextField id="standard-basic" variant="standard" type="text" fullWidth
                 style={{ height: '60px', paddingTop: '0.5rem' }}
-                placeholder='Email' />
+                placeholder='อีเมล' />
             </div>
           </div>
 
-          <div class="item-title item-label" style={{ margin: "20px 0px", fontSize: '14px', color: '#8a8a8a' }}>Password</div>
+          <div class="item-title item-label" style={{ margin: "20px 0px", fontSize: '14px', color: '#8a8a8a' }}>รหัสผ่าน</div>
           <div style={{ display: 'flex', flexDirection: "column", justifyContent: 'center', alignItems: 'center', fontSize: '14px' }}>
             <div className="form-group" style={{ width: "100%" }}>
               <TextField id="standard-basic" variant="standard" type="password" fullWidth
                 style={{ height: '60px', paddingTop: '0.5rem' }}
-                placeholder='Password' />
+                placeholder='รหัสผ่าน' />
             </div>
 
             <Button style={{
               marginTop: '20px', backgroundColor: "#606060", border: 'none',
               borderRadius: '50px', padding: '18px 25px', height: '56.8px', width: '300px', color: '#ffffff', fontWeight: '600',
               width: "100%", fontSize: '16px'
-            }} onClick={() => changepage("login")}>SIGN UP
+            }} onClick={() => changepage("login")}>สมัครสมาชิก
             </Button>
 
           </div>
           <div style={{ marginTop: '20px', display: 'flex', alignItems: "center", justifyContent: "center", textAlign: 'center', lineHeight: '24px' }}>
-            <p class="form-text" >By tapping Sign up you accept all our
+            <p class="form-text" >การกดปุ่มสมัครแสดงว่าคุณยอมรับ
               <a href="#" style={{
                 fontWeight: "600", textdecoration: 'underline',
                 color: "#03764D", fontSize: '14px', padding: '3px'
-              }}>terms</a> and
+              }}>ข้อกำหนด</a> และ
               <a href="#" style={{
                 fontWeight: "600", textdecoration: 'underline',
                 color: "#03764D", fontSize: '14px', padding: '3px'
-              }}>condition</a>
+              }}>เงื่อนไข</a> ทั้งหมด
             </p>
           </div>
         </form>

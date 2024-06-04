@@ -37,46 +37,46 @@ function Signin() {
 
                     <h2 style={{
                         fontSize: '28px', paddingTop: '8px', paddingLeft: '10px', lineheight: ' 30px',
-                        fontWeight: '600', lineHeight: '30px', marginBottom: '10px'
+                        fontWeight: '600', lineHeight: '30px', marginBottom: '10px', fontFamily: "Poppins, sans-serif"
                     }}>Ombe</h2>
                 </div>
 
 
                 <form onSubmit={handleLogin} >
-                    <h2 style={{ textAlign: 'left', fontSize: '1.5rem', marginBottom: '10px', fontWeight: '600', color: '#1b1b1b' }}>Sign In</h2>
-                    <p className="subtext" style={{ fontSize: '14px', lineHeight: '24px', color: '#000000', fontWeight: '400' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                    <h2 style={{ textAlign: 'left', fontSize: '1.5rem', marginBottom: '10px', fontWeight: '600', color: '#1b1b1b' }}>เข้าสู่ระบบ</h2>
+                    <p className="subtext" style={{ fontSize: '14px', lineHeight: '24px', color: '#000000', fontWeight: '400' }}>กรุณาเข้าสู่ระบบด้วยชื่อผู้ใช้และรหัสผ่านของคุณเพื่อเข้าถึงบัญชีของคุณ</p>
 
-                    <div class="item-title item-label" style={{ margin: "10px 0px", fontSize: '14px', color: '##8a8a8a' }}>Username</div>
+                    <div class="item-title item-label" style={{ margin: "10px 0px", fontSize: '14px', color: '##8a8a8a' }}>ชื่อผู้ใช้</div>
                     <div style={{ display: 'flex', flexDirection: "column", justifyContent: 'center', alignItems: 'center', fontSize: '14px' }}>
                         <div className="form-group" style={{ width: "100%" }}>
                             <TextField id="standard-basic" variant="standard" type="text" fullWidth
                                 style={{ height: '60px', paddingTop: '0.5rem' }}
-                                placeholder='Username' />
+                                placeholder='ชื่อผู้ใช้' />
                         </div>
                     </div>
-                    <div class="item-title item-label" style={{ margin: "20px 0px", fontSize: '14px', color: '#8a8a8a' }}>Password</div>
+                    <div class="item-title item-label" style={{ margin: "20px 0px", fontSize: '14px', color: '#8a8a8a' }}>รหัสผ่าน</div>
                     <div style={{ display: 'flex', flexDirection: "column", justifyContent: 'center', alignItems: 'center', fontSize: '14px' }}>
                         <div className="form-group" style={{ width: "100%" }}>
                             <TextField id="standard-basic" variant="standard" type="password" fullWidth
                                 style={{ height: '60px', paddingTop: '0.5rem' }}
-                                placeholder='Password' />
+                                placeholder='รหัสผ่าน' />
                         </div>
 
                         <Button style={{
                             marginTop: '20px', backgroundColor: "#03764D", border: 'none',
                             borderRadius: '50px', padding: '18px 25px', height: 'auto', color: '#FFFFFF', fontWeight: "600",
                             height: '56.8px', width: "100%", fontSize: '16px'
-                        }} onClick={() => changepage("")} >LOGIN
+                        }} onClick={() => changepage("")} >เข้าสู่ระบบ
                         </Button>
 
                     </div>
                     <p className="mb-0 " style={{ fontSize: '14px', marginTop: '20px' }} >
-                        Forgot password?{" "}
+                        ลืมรหัสผ่าน?{" "}
                         <Link onClick={() => changepage("signup")} style={{
                             fontWeight: "600", textdecoration: 'underline',
                             color: "#03764D", fontSize: '14px', marginLeft: '5px'
                         }}>
-                            Reset here
+                            รีเซ็ตที่นี่
                         </Link>
                     </p>
 
@@ -89,13 +89,13 @@ function Signin() {
                         fontSize: '14px', marginBottom: '14px',
                         textAlign: 'center', fontWeight: '500px', opacity: '0.4', marginTop: '40px'
                     }}>
-                        Don't have an account?{" "}
+                        ยังไม่มีบัญชี?{" "}
                     </p>
                     <Button style={{
                         marginTop: '1rem', backgroundColor: "#F7DBB4", border: 'none', borderRadius: '50px',
                         padding: '18px 25px', height: '56.8px', color: '#313131', fontWeight: 'bold', width: "100%", fontWeight: "600",
                     }} onClick={() => changepage("create")}>
-                        CREATE AN ACCOUNT
+                        สร้างบัญชี
                     </Button>
                 </div>
             </div>
