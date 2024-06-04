@@ -46,20 +46,18 @@ function Signin() {
                     <h2 style={{ textAlign: 'left', fontSize: '1.5rem', marginBottom: '10px', fontWeight: '600', color: '#1b1b1b' }}>เข้าสู่ระบบ</h2>
                     <p className="subtext" style={{ fontSize: '14px', lineHeight: '24px', color: '#000000', fontWeight: '500' }}>กรุณาเข้าสู่ระบบด้วยชื่อผู้ใช้และรหัสผ่านของคุณเพื่อเข้าถึงบัญชีของคุณ</p>
 
-                    <div class="item-title item-label" style={{ margin: "10px 0px", fontSize: '14px', color: '#8a8a8a' ,fontWeight: '400'}}>ชื่อผู้ใช้</div>
-                    <div style={{ display: 'flex', flexDirection: "column", justifyContent: 'center', alignItems: 'center', fontSize: '14px' }}>
+                    {/* <div class="item-title item-label" style={{ margin: "10px 0px", fontSize: '14px', color: '#8a8a8a' ,fontWeight: '400'}}>ชื่อผู้ใช้</div> */}
+                    <div style={{ display: 'flex', flexDirection: "column", justifyContent: 'center', alignItems: 'center', fontSize: '14px', marginTop: "20px" }}>
                         <div className="form-group" style={{ width: "100%" }}>
-                            <TextField id="standard-basic" variant="standard" type="text" fullWidth
-                                style={{ height: '60px', paddingTop: '0.5rem' }}
-                                placeholder='ชื่อผู้ใช้' />
+                            <TextField id="standard-basic" label="ชื่อผู้ใช้" variant="standard" type="text" fullWidth
+                                style={{ height: '60px', paddingTop: '0.5rem' }} />
                         </div>
                     </div>
-                    <div class="item-title item-label" style={{ margin: "20px 0px", fontSize: '14px', color: '#8a8a8a' ,fontWeight: '400'}}>รหัสผ่าน</div>
-                    <div style={{ display: 'flex', flexDirection: "column", justifyContent: 'center', alignItems: 'center', fontSize: '14px' }}>
+                    {/* <div class="item-title item-label" style={{ margin: "20px 0px", fontSize: '14px', color: '#8a8a8a', fontWeight: '400' }}>รหัสผ่าน</div> */}
+                    <div style={{ display: 'flex', flexDirection: "column", justifyContent: 'center', alignItems: 'center', fontSize: '14px', marginTop: "20px" }}>
                         <div className="form-group" style={{ width: "100%" }}>
-                            <TextField id="standard-basic" variant="standard" type="password" fullWidth
-                                style={{ height: '60px', paddingTop: '0.5rem' }}
-                                placeholder='รหัสผ่าน' />
+                            <TextField id="standard-basic" label="รหัสผ่าน" variant="standard" type="password" fullWidth
+                                style={{ height: '60px', paddingTop: '0.5rem' }} />
                         </div>
 
                         <Button style={{
@@ -70,7 +68,7 @@ function Signin() {
                         </Button>
 
                     </div>
-                    <p className="mb-0 " style={{ fontSize: '14px', marginTop: '20px',fontWeight: '400', color: '#8a8a8a' }} >
+                    <p className="mb-0 " style={{ fontSize: '14px', marginTop: '20px', fontWeight: '400', color: '#8a8a8a' }} >
                         ลืมรหัสผ่าน?{" "}
                         <Link onClick={() => changepage("signup")} style={{
                             fontWeight: "600", textdecoration: 'underline',
@@ -83,11 +81,11 @@ function Signin() {
                 </form>
                 <div className="mt-4" style={{
                     display: "flex", flexDirection: "column",
-                    justifyContent: 'center', alignItems: 'center' ,fontWeight: '400'
+                    justifyContent: 'center', alignItems: 'center', fontWeight: '400'
                 }}>
                     <p className="mb-0  text-center" style={{
-                        fontSize: '14px', marginBottom: '14px', 
-                        textAlign: 'center',  opacity: '0.4', marginTop: '40px',fontWeight: '400'
+                        fontSize: '14px', marginBottom: '14px',
+                        textAlign: 'center', opacity: '0.4', marginTop: '40px', fontWeight: '400'
                     }}>
                         ยังไม่มีบัญชี?{" "}
                     </p>
