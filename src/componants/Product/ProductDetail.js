@@ -88,7 +88,8 @@ function ProductDetail() {
                     <div className='price-container'>
                         <div
                             style={{ fontSize: "1.5rem", fontWeight: "600" }}>
-                            $ 5.8
+                            <span style={{fontSize:"14px", fontWeight:"600"}}>$ </span>
+                            5.8
                             <span style={{
                                 fontSize: "1rem",
                                 textDecoration: "line-through", marginLeft: "0.5rem", opacity: "0.5"

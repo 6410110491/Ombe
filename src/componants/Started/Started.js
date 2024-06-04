@@ -45,10 +45,10 @@ function Started() {
                                 style={{ width: '235px', height: '242px', margin: '70px' }} />
                             <div style={{ padding: '0px 15px', marginTop: '50px' }}>
                                 <h2 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize: '24px', lineHeight: '30px', fontWeight: '600', textAlign: 'center', marginBottom: '25px' }}>
-                                    Let’s meet our summer coffee drinks
+                                มาพบกับเครื่องดื่มกาแฟหน้าร้อนของเรากัน
                                 </h2>
                                 <p className="subtext" style={{ fontSize: '14px', textAlign: 'center', paddingBottom: '40px' }}>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                พบประสบการณ์ใหม่ในการดื่มกาแฟทุกครั้งที่คุณเข้ามาในร้านของเรา สัมผัสกับรสชาติที่เป็นเอกลักษณ์และบรรยากาศที่อบอุ่น สร้างความทรงจำดีๆ ไปกับเราในทุกๆ แก้ว
                                 </p>
                             </div>
                         </div>
@@ -60,10 +60,10 @@ function Started() {
                                 style={{ width: '235px', height: '242px', margin: '70px' }} />
                             <div style={{ padding: '0px 15px', marginTop: '50px' }}>
                                 <h2 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize: '24px', lineHeight: '30px', fontWeight: '600', textAlign: 'center', marginBottom: '25px' }}>
-                                    Start your morning with great coffee
+                                เริ่มต้นเช้าวันใหม่ด้วยกาแฟชั้นดี
                                 </h2>
                                 <p className="subtext" style={{ fontSize: '14px', textAlign: 'center', paddingBottom: '40px' }}>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                                พบประสบการณ์ใหม่ในการดื่มกาแฟทุกครั้งที่คุณเข้ามาในร้านของเรา สัมผัสกับรสชาติที่เป็นเอกลักษณ์และบรรยากาศที่อบอุ่น สร้างความทรงจำดีๆ ไปกับเราในทุกๆ แก้ว
                                 </p>
                             </div>
                         </div>
@@ -75,10 +75,10 @@ function Started() {
                                 style={{ width: '235px', height: '242px', margin: '70px' }} />
                             <div style={{ padding: '0px 15px', marginTop: '50px' }}>
                                 <h2 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize: '24px', lineHeight: '30px', fontWeight: '600', textAlign: 'center', marginBottom: '25px' }}>
-                                    Best coffee shop in this town
+                                ร้านกาแฟที่ดีที่สุดในเมืองนี้
                                 </h2>
                                 <p className="subtext" style={{ fontSize: '14px', textAlign: 'center', paddingBottom: '40px' }}>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                                พบประสบการณ์ใหม่ในการดื่มกาแฟทุกครั้งที่คุณเข้ามาในร้านของเรา สัมผัสกับรสชาติที่เป็นเอกลักษณ์และบรรยากาศที่อบอุ่น สร้างความทรงจำดีๆ ไปกับเราในทุกๆ แก้ว
                                 </p>
                             </div>
                         </div>
@@ -91,7 +91,7 @@ function Started() {
                     backgroundColor: "#ffffff", border: "0.5px solid #d9d9d9",
                     borderRadius: '50px', padding: '18px 25px', height: 'auto', color: '#000000', fontWeight: 'bold',
                     width: "40%", fontSize: '16px', margin: '5px'
-                }} onClick={handlePrev}>BACK
+                }} onClick={handlePrev}>ย้อนกลับ
                 </Button>
 
 
@@ -100,7 +100,7 @@ function Started() {
                     backgroundColor: "#03764D", border: 'none',
                     borderRadius: '50px', padding: '18px 25px', height: 'auto', color: '#FFFFFF', fontWeight: 'bold',
                     width: "40%", fontSize: '16px', margin: '5px'
-                }} onClick={handleNext}>NEXT
+                }} onClick={handleNext}>ถัดไป
                 </Button>
             </div>
         </div>
