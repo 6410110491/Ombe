@@ -12,14 +12,18 @@ function TopBar() {
     return (
         <Navbar key="false" expand="false"
             style={{
-                marginTop: "20px" , marginBottom: "30px" ,
+                marginTop: "20px", marginBottom: "30px",
                 padding: "0"
             }}>
-            <Container fluid style={{padding: '0' }}>
+            <Container fluid style={{ padding: '0' }}>
                 <Navbar.Brand href="/">
                     <div className='brand'>
-                        <p className='brand-haeder' style={{fontSize: "14px" , fontWeight: '400', color: '#1b1b1b'}}>Good Morning</p>
-                        <p className='brand-sub' style={{fontSize: "24px", fontWeight: '600', color: '#1b1b1b', margin: '0'}}>Williams</p>
+                        <p className='brand-haeder' style={{ fontSize: "14px", fontWeight: '400', color: '#1b1b1b' }}>
+                            สวัสดีตอนเช้า
+                        </p>
+                        <p className='brand-sub' style={{ fontSize: "24px", fontWeight: '600', color: '#1b1b1b', margin: '0' }}>
+                            วิลเลียม
+                        </p>
                     </div>
                 </Navbar.Brand>
 
@@ -52,8 +56,10 @@ function TopBar() {
                             padding: "4px 12px",
                         }}></i>
                     </div>
-                    <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-false`} style={{fontSize: '25px' ,
-                            padding: "4px 0 4px 12px"}}>
+                    <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-false`} style={{
+                        fontSize: '25px',
+                        padding: "4px 0 4px 12px"
+                    }}>
                         <i className="fa-solid fa-bars-staggered"></i>
                     </Navbar.Toggle>
                     <Navbar.Offcanvas
@@ -76,15 +82,16 @@ function TopBar() {
                                     padding: "15px 25px"
                                 }}>
                                     <i class="fa-solid fa-house"
-                                        style={{ marginRight: "20px" }}></i>
-                                    Start</Nav.Link>
+                                        style={{ marginRight: "20px", color: "#04764e" }}></i>
+                                    เริ่มต้น</Nav.Link>
 
                                 <Nav.Link href="/login" style={{
                                     fontSize: "1.125rem", fontWeight: "400",
                                     padding: "15px 25px"
                                 }}>
                                     <i className="fa-solid fa-right-to-bracket"
-                                        style={{ marginRight: "20px" }}></i>  Login</Nav.Link>
+                                        style={{ marginRight: "20px", color: "#04764e" }}></i>
+                                    เข้าสู่ระบบ</Nav.Link>
                             </Nav>
                         </Offcanvas.Body>
                     </Navbar.Offcanvas>

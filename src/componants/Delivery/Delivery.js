@@ -43,11 +43,11 @@ function Delivery() {
                     <i className="fa-solid fa-arrow-left-long"
                         style={{
                             fontSize: '24px', backgroundColor: "#F6F6F6", width: "46px", height: "46px",
-                                borderRadius: "50%", display: "flex", justifyContent: "center", alignItems: "center"
+                            borderRadius: "50%", display: "flex", justifyContent: "center", alignItems: "center"
                         }}>
                     </i>
                 </div>
-                <div className='toptext' style={{fontWeight:'600'}}>Tracking Orders</div>
+                <div className='toptext' style={{ fontWeight: '600' }}>ติดตามคำสั่งซื้อ</div>
                 <div style={{ width: "40px", height: "40px" }}></div>
             </div>
 
@@ -75,7 +75,7 @@ function Delivery() {
                             style={{ width: "3.75rem", height: "3.75rem", borderRadius: "50%" }} />
                     </div>
                     <div>
-                        <div style={{ fontSize: "20px", fontWeight: "400" }}>Mr. Shandy</div>
+                        <div style={{ fontSize: "20px", fontWeight: "400" }}>นาย แซนดี้</div>
                         <div>ID 2445556</div>
                     </div>
                 </div>
@@ -116,8 +116,8 @@ function Delivery() {
                             </i>
                         </div>
                         <div>
-                            <div className='main-text'>Sweet Corner St.</div>
-                            <div className='main-subtext'>Avenue 2263</div>
+                            <div className='main-text'>ถนนเลี่ยงเมือง</div>
+                            <div className='main-subtext'>ตำบล มะขามเตี้ย</div>
                         </div>
                     </div>
 
@@ -144,8 +144,8 @@ function Delivery() {
                             </i>
                         </div>
                         <div>
-                            <div className='main-text'>Sweet Corner St.</div>
-                            <div className='main-subtext'>Avenue 2263</div>
+                            <div className='main-text'>ถนนเลี่ยงเมือง</div>
+                            <div className='main-subtext'>ตำบล มะขามเตี้ย</div>
                         </div>
                     </div>
                 </div>
